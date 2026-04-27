@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+  <div id="target-element" style="border: 1px solid red; padding: 10px; width: 200px;">
+    Я важливий елемент, який зникне
+  </div>
+  <br>
+
+
+  <button id="hide-btn">Сховати елемент вище</button>
+
+  <script>
+    const btn = document.getElementById('hide-btn');
+    const element = document.getElementById('target-element');
+
+    btn.addEventListener('click', function() {
+      element.style.display = 'none';
+    });
+  </script>
+
+</body>
+</html>
